@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- ====================================Linking Tailwind CSS======================= -->
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+   
+<div class="container">
+<div class="navbar flex  justify-between  bg-red-500 w-screen h-16">
+    <div class="flex justify-center items-center h-64 z-10 w-64 -mx-22 -my-19  bg-red-500 rounded-full">
+        <img src="./assets/carlogo.png" alt="" class="h-24 max-w-48 ml-16 mt-4 z-10">
+    </div>
+    <nav class="bg-transparent max-w-8xl max-h-8 py-8 flex content-center justify-between">
+        <!-- Navigation Menu -->
+      <!-- Simplified HTML Structure -->
+<ul class="hidden lg:flex text-2xl leading-3 font-medium text-black text-center space-x-10 list-none mr-8 nav-menu">
+    <li>Home</li>
+    <li>About</li>
+    <li>Contact Us</li>
+</ul>
+
+<!-- Mobile Menu Toggle Button -->
+<button class="menu-toggler-btn text-3xl flex justify-center items-center lg:hidden mr-6">
+    <i class="fa-solid fa-bars"></i>
+</button>
+
+<!-- Mobile Menu (Same list, different styling) -->
+<ul class="hidden" id="mobile-menu">
+    <li>Home</li>
+    <li>About</li>
+    <li>Contact Us</li>
+</ul>
+    </nav>
+    
+</div>
+          
+        <!-- =====================================Main Body Section===================================== -->
+         <!-- ========================================================================================== -->
+        <main class="main flex flex-col">
+            <div class="maincontainer flex flex-col md:flex-row w-screen min-h-screen bg-cyan-100">
+                <!-- Left Section -->
+                <div class="left w-full flex flex-col justify-center md:w-screen min-h-screen p-6 md:p-10">
+                    <div class="z-10 -mt-20 mb-12 md:-mt-2 lg:-mt-24 " >
+                        <h1 class="text-4xl sm:text-6xl md:text-6xl font-extrabold text-gray-800 font-mono leading-tight">
+                            Find Your<br>Dream Car
+                        </h1>
+                    </div>
+                    <div class="-mt-12 h-auto w-full md:w-3/4 mb-3 ">
+                        <p class="text-base sm:text-3xl md:text-3xl">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, lorem10ex? Placeat, voluptate.
+                        </p>
+                    </div>
+                    <div class="mt-4">
+                        <button class="w-40 sm:w-52 md:w-48 h-12 md:h-16 rounded border-2 border-white text-lg md:text-xl font-medium text-white hover:bg-white hover:text-gray-900 transition bg-red-500">
+                            Read More
+                        </button>
+                    </div>
+                    <div class="circle  w-16 md:w-20 h-16 md:h-20 bg-red-500 rounded-full mt-8"></div>
+                </div>
+            
+                <!-- Right Section -->
+                <div class="right sm:w-screen min-h-[50vh] md:min-h-screen md:w-screen bg-cyan-100 relative">
+                    <img src="./assets/Herocar.png" alt="" 
+     class="absolute
+            /* Mobile First */
+            w-[80%] max-w-[280px] left-[15%] -top-100px
+            
+            /* Small (sm) */
+            sm:w-[55%] sm:max-w-[320px] sm:left-[18%] sm:top-[18%]
+            
+            /* Medium (md) */
+            md:w-[70%] md:max-w-[600px] md:left-[22%] md:top-[20%]
+            
+            /* Large (lg) - Original laptop position */
+            lg:w-[500px] lg:h-[500px] lg:left-[10px] lg:top-[80px] lg:max-w-none"> <!-- Laptop positioning -->
+                </div>
+        
+                </div>
+                <div class="topcategories w-screen min-h-screen bg-cyan-100 flex flex-col items-center py-10">
+                    <!-- Heading -->
+                    <div class="heading text-center">
+                        <h1 class="text-4xl font-bold text-gray-800">Top Categories</h1>
+                    </div>
+                    <div class="catagory-detail mt-4 px-4 font-sans ">
+                        <h4 class="text-3xl sm:text-3xl md:text-3xl">Discover a range of top car categories, from luxury sedans to high-performance sports cars. Find the perfect ride that matches your style and needs! </h4>
+                    </div>
+
+                    <div class="options-container flex justify-evenly w-full h-12 ms:h-16  bg-red-500 relative top-7">
+                        <select id="company" class="border-1 border-black w-48">
+                         <option>Select a Company</option>
+                        </select>
+                        <select id="model" class="border-1 border-black w-48">
+                            <option>Select a Model</option>
+                           </select>
+                    </div>
+
+                  <div class="car-card-section flex flex-wrap justify-center gap-4 mt-32">
+                    <div class="card w-[300px]  lg:h-[400px] h-[420px] bg-red-500 rounded-md">
+                        <div class="card-img max-w-full">
+                         <img src="./assets/Herocar.png" alt="">
+                        </div>
+                        <div class="card-detail border-t-1">
+                         <h1 class="text-center text-4xl font-bold">Name</h1>
+                        <div class="discription w-full flex felx-col px-2 py-6" >
+                            <div class="model font-medium mr-2">
+                            <h4>Comapany <span class="font-thin">toyota</span></h4>
+                            <h4>Model <span class="font-thin">toyota 2022</span></h4>
+                            </div>
+                            <div class="price font-medium">
+                                <h4>Price <span class="font-thin">PKR-20,000000</span></h4>
+                                <h4>Color <span class="font-thin">Red</span></h4>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="button-div flex justify-center font-medium lg:mb-4">
+                            <button class="w-[70%] bg-red-900 h-12 rounded-md">Add To Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="card w-[300px]  lg:h-[400px] h-[420px] bg-red-500 rounded-md">
+                        <div class="card-img max-w-full">
+                         <img src="./assets/Herocar.png" alt="">
+                        </div>
+                        <div class="card-detail border-t-1">
+                         <h1 class="text-center text-4xl font-bold">Name</h1>
+                        <div class="discription w-full flex felx-col px-2 py-6" >
+                            <div class="model font-medium mr-2">
+                            <h4>Comapany <span class="font-thin">toyota</span></h4>
+                            <h4>Model <span class="font-thin">toyota 2022</span></h4>
+                            </div>
+                            <div class="price font-medium">
+                                <h4>Price <span class="font-thin">PKR-20,000000</span></h4>
+                                <h4>Color <span class="font-thin">Red</span></h4>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="button-div flex justify-center font-medium lg:mb-4">
+                            <button class="w-[70%] bg-red-900 h-12 rounded-md">Add To Cart</button>
+                        </div>
+                    </div>
+                  </div>
+
+                </div>
+
+        </main>
+         <!-- =====================================Footer Section===================================== -->
+         <!-- ======================================================================================== -->
+        <footer>
+    
+        </footer>
+</div>
+
+
+<script src="app.js"></script>
+</body>
+</html>

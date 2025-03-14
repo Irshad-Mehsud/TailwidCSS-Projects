@@ -1,0 +1,49 @@
+/* Mobile Menu Styles */
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+#mobile-menu {
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    width: 180px;
+    background-color: #EF4444;
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 10;
+}
+
+#mobile-menu li {
+    height: 40px;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 4px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 7px 0;
+}
+
+#mobile-menu li:hover {
+    background-color: gray;
+}
+
+/* Desktop Menu (handled by Tailwind) */
+.nav-menu {
+    /* Your existing Tailwind classes handle this */
+}
+
+@media (min-width: 1024px) {
+    .right {
+    
+        min-height: 50vh !important;
+    }
+    img[alt="Herocar.png"] {
+        left: 120px !important;
+        top: 80px !important;
+        width: 7999px !important;
+        height: 120px !important;
+    }
+}
